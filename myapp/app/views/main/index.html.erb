@@ -1,0 +1,15 @@
+<h1>衝動貯めっ！</h1>
+<%= form_tag("/", method: "get") do %>
+<table>
+<tr>
+  <td><%= label_tag :result, "￥" %></td>
+  <td><%= text_field_tag :result, @result %></td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td><%= submit_tag "我慢っ！" %></td>
+  <td></td>
+</tr>
+</table>
+<% end %>
